@@ -1,0 +1,64 @@
+@import '../../App.scss';
+
+.third{
+
+    .zagolovok{
+        font-family: $fonts;
+        color: $h-color;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+    .elements{
+        display: flex;
+        grid-gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        .element{
+            width: 390px;
+            .elFoto{
+                position: relative;
+                width: 100%;
+                margin-bottom: 24px;
+                .elName{
+                    position: absolute;
+                    left: 30px;
+                    top: 195px;
+                    font-family: $fonts;
+                    color: $white-color;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 27.6px;
+                }
+            }
+            .elText{
+                font-family: $fonts;
+                color: $p-color;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+            }
+    
+        }
+    }
+    .button{
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        button{
+            width: 184px;
+            height: 56px;
+            background-color: $h-color;
+            border: none;
+            border-radius: 12px;
+            font-family: $fonts;
+            color: $white-color;
+            font-size: 14px;
+            line-height: 16.1px;
+            text-align: center;
+        }
+    }
+}

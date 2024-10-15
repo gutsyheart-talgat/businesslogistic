@@ -1,0 +1,54 @@
+@import '../../App.scss';
+
+.fifth{
+    padding: 100px 0;
+
+    .h3{
+        font-family: $fonts;
+        color: $h-color;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px;
+        
+    }
+
+    .elements{
+        display: flex;
+        grid-gap: 120px;
+        grid-row-gap: 64px;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        .element{
+            width: 330px;
+            .foto{
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                background-color: $white-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+                box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            h3{
+                font-family: $fonts;
+                color: $h-color;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 27.6px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-family: $fonts;
+                color: $p-color;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}

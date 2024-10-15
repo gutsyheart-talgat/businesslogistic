@@ -1,0 +1,59 @@
+@import '../../App.scss';
+.seventh{
+    padding: 100px 0;
+
+    h3{
+        font-family: $fonts;
+        color: $h-color;
+        font-size: 36px;
+        line-height: 41.4px;
+        text-align: center;
+    }
+    .card{
+        display: flex !important;
+        width: 766px !important;
+        height: 141px !important;
+        grid-gap: 15px;
+
+        .logo{
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            background-color: $white-color;
+            margin-bottom: 15px;
+            box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
+        }
+        .feedback{
+            width: 692px;
+            height: 141px;
+            border-radius: 31px;
+            background-color: $white-color;
+            box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
+            padding: 18px 32px;
+
+            .company{
+                height: 36px;
+                width: 161px;
+                margin-bottom: 25px;
+                .h{
+                    font-family: $fonts;
+                    color: $h-color;
+                    font-size: 16px;
+                    line-height: 18.4px;
+                }
+                .p{
+                    font-family: $fonts;
+                    color: #979797;
+                    font-size: 14px;
+                    line-height: 16.1px;
+                }
+            }
+            p{
+                font-family: $fonts;
+                color: $h-color;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+}
