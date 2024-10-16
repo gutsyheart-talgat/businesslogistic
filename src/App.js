@@ -5,6 +5,7 @@ import Second from './components/second';
 import Third from './components/third';
 import Fifth from './components/fifth';
 import Seventh from './components/seventh';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Fourth/>
       <Fifth/>
       <Seventh/>
+      <Footer />
     </div>
   );
 }
