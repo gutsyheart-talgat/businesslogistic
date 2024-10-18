@@ -4,6 +4,14 @@ import logo from '../../img/BusinessLogistic.svg'
 import plane from '../../img/plane.svg'
 import train from '../../img/train.svg'
 import truck from '../../img/truck.svg'
+import Fourth from '../fourth';
+// import Second from './components/second';
+// import Third from './components/third';
+// import Fifth from './components/fifth';
+// import Seventh from './components/seventh';
+// import Footer from './components/footer';
+// import Eigth from './components/eigth';
+// import Sixth from './components/sixth';
 export default function First (){
     return (
         <div className={`${style.first}`}>
@@ -11,7 +19,7 @@ export default function First (){
                 <header>
                     <img src={logo}/>
                     <menu>
-                        <a>О нас</a>
+                        <a to={<Fourth/>}>О нас</a>
                         <a>Услуги</a>
                         <a>Преимущества</a>
                         <a>Направления</a>
