@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import style from './second.module.scss'
 import second from '../../img/second.jpg'
-export default function Second (){
+const Second = forwardRef ((props,ref)=>{
     return(
-        <div className={style.second}>
+        <div className={style.second} ref={ref}>
             <div className='container'>
                 <div className={style.content}>
                     <img src={second}/>
@@ -24,4 +24,6 @@ export default function Second (){
             </div>
         </div>
     )
-}
+ })
+
+export default Second

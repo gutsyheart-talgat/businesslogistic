@@ -1,4 +1,4 @@
-import React from "react";
+import React,{forwardRef} from "react";
 import style from './fifth.module.scss'
 import Lock from '../../img/Lock.svg'
 import truck from '../../img/truck.svg'
@@ -7,7 +7,7 @@ import Paper from '../../img/Paper.svg'
 import Heart from '../../img/Heart.svg'
 import Shield from '../../img/Shield.svg'
 
-export default function Fifth(){
+const Fifth = forwardRef((props,ref)=>{
     const elements = [
         {id:1,name:"Безопасность грузов:", text:"Наши специалисты обеспечивают 100% сохранность вашего груза на всех этапах транспортировки.",img:Lock},
         {id:2,name:"Доставка в срок:", text:"Мы гарантируем доставку вашего груза точно в срок, без задержек.",img:truck},
@@ -17,7 +17,7 @@ export default function Fifth(){
         {id:6,name:"Безопасность сделок:", text:"Наша логистическая компания предоставляет только надежные маршруты и проверенных поставщиков.",img:Shield}
     ]
     return(
-        <div className={style.fifth}>
+        <div className={style.fifth} ref={ref}>
             <div className="container">
                 <h3 className={style.h3}>Наши преимущества</h3>
                 <div className={style.elements}>
@@ -34,4 +34,6 @@ export default function Fifth(){
             </div>
         </div>
     )
-}
+})
+
+export default Fifth

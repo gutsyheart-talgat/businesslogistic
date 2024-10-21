@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import style from './third.module.scss'
 import logistic from '../../img/logistic.png'
 import customs from '../../img/customs.png'
@@ -6,7 +6,7 @@ import certificate from '../../img/certificate.png'
 import consult from '../../img/consult.png'
 import Logistic from '../../img/logistic.png'
 
-export default function Third(){
+const Third = forwardRef((props,ref)=>{
     const element = [
         {id:1, name: "Международные грузоперевозки", text: "Мы помогаем нашим клиентам с  консолидированной и полной загрузкой, разгрузкой, перегрузкой и упаковкой грузов", img:Logistic},
         {id:2, name: "Таможенное оформление", text: "Оформление грузов таможенными брокерами.Таможенная очистка грузов, в том числе санкционные грузы", img:customs},
@@ -15,7 +15,7 @@ export default function Third(){
         {id:5, name: "страхование", text: "По запросу клиентов обеспечиваем страхование грузов через партнерские страховые комплексы", img:logistic},
     ]
     return(
-        <div className={style.third}>
+        <div className={style.third} ref={ref}>
             <div className="container">
                 <h3 className={style.zagolovok}>Услуги, предоставляемые нами</h3>
                 <div className={style.elements}>
@@ -37,4 +37,6 @@ export default function Third(){
             </div>
         </div>
     )
-}
+})
+
+export default Third

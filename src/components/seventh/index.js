@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import style from './seventh.module.scss'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Seventh(){
+const Seventh=forwardRef((props,ref)=>{
     function SamplePrevArrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -34,33 +34,9 @@ export default function Seventh(){
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow/>,
         prevArrow: <SamplePrevArrow/>,
-        
-        // appendDots: dots => (
-        //     <div
-        //       style={{
-        //         backgroundColor: "inherit",
-
-        //       }}
-        //     >
-        //       <ul style={{ margin: "0px", }}> {dots} </ul>
-        //     </div>
-        //   ),
-        //   customPaging: i => (
-        //     <div
-        //       style={{
-        //         width: "64px",
-        //         borderRadius:"100",
-        //         height:"6px",
-        //         backgroundColor:"#FFC42D"
-
-        //       }}
-        //     >
-              
-        //     </div>
-        //   )
       };
     return(
-        <div className={style.seventh}>
+        <div className={style.seventh} ref={ref}>
             <h3>Наши клиенты - наша гордость</h3>
             <Slider {...settings}>
                 <div className={style.card}>
@@ -97,4 +73,6 @@ export default function Seventh(){
             
         </div>
     )
-}
+})
+
+export default Seventh
