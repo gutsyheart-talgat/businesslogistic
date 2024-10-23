@@ -8,25 +8,27 @@ import Seventh from './components/seventh';
 import Footer from './components/footer';
 import Eigth from './components/eigth';
 import Sixth from './components/sixth';
+import Header from './components/Header'
 import React, {useRef} from 'react';
 function App() {
-
   let seventh = useRef()
   let second = useRef()
   let third = useRef()
   let sixth = useRef()
   let fifth = useRef()
-  
+  let first = useRef()
+  let eigth = useRef()
   return (
     <div className="App">
-      <First second={second} third={third} fifth={fifth} sixth={sixth} seventh={seventh}/>
+      <Header first={first} two={second} three={third} five={fifth} six={sixth} seven={seventh}/>
+      <First ref={first}/>
       <Second ref={second}/>
       <Third ref={third}/>
-      <Fourth/>
+      <Fourth eigth={eigth}/>
       <Fifth ref={fifth}/>
       <Sixth ref={sixth}/>
       <Seventh ref={seventh}/>
-      <Eigth/>
+      <Eigth ref={eigth}/>
       <Footer />
     </div>
   );

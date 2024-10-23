@@ -23,7 +23,14 @@
         }
     }
 }
-
+.head-fixed{
+    position: fixed !important; 
+    top: 0 !important;
+    z-index: 9999;
+}
+.head-back{
+    background-color: #32333F !important;
+}
 
 $white-color:#FFFFFF;
 $h-color:#32333F;

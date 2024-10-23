@@ -26,11 +26,26 @@
             background-color: $h-color;
             border: none;
             border-radius: 12px;
-            font-family: $fonts;
-            color: $yellow;
-            font-size: 14px;
-            line-height: 16.1px;
             text-align: center;
+            a{
+                text-decoration: none;
+                font-family: $fonts;
+                color: $yellow;
+                font-size: 14px;
+                width: 184px !important;
+                height: 56px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            a:hover{
+                color: $h-color;
+            }
+        }
+        button:hover{
+            background-color: $yellow;
+            border: 2px solid $h-color;
         }
     }
     

@@ -38,4 +38,8 @@
         line-height: 16.1px;
         text-align: center;
     }
+    button:hover{
+        background-color: $h-color;
+        color: $yellow;
+    }
 }

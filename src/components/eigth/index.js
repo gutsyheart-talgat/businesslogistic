@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import style from './eigth.module.scss'
 import { TextField } from "@mui/material";
 import map from '../../img/map.jpg'
@@ -9,14 +9,14 @@ import whatsapp from '../../img/whatsapp.png'
 import twitter from '../../img/twitter.png'
 import facebook from '../../img/facebook.png'
 
-export default function Eigth(){
+const Eigth= forwardRef((props,ref)=>{
     const right = [
         {id:1,name:"Адрес:", text: " Панфилова, 178 (БЦ “ОРИОН 2)",img:Location},
         {id:1,name:"Телефон:", text: " +996707505822",img:Call},
         {id:1,name:"Почта:", text: "businesslogistic@gmail.com",img:Message}
     ]
     return(
-        <div className={style.eigth}>
+        <div className={style.eigth} ref={ref}>
             <div className="container">
                 <div className={style.content}>
                     <div className={style.left}>
@@ -30,7 +30,7 @@ export default function Eigth(){
                             <TextField label="Ваша почта" className={style.input} variant="standard"/>
                             <TextField label="Тип груза или комментарий"  className={style.input} multiline maxRows={3} variant="standard"/>
                         </div>
-                        <button>Оставить заявку</button>
+                        <button><a href="mailto:talgatdzhailikeev777@gmail.com">Сделать заказ</a></button>
                     </div>
                     <div className={style.right}>
                         <img src={map} className={style.map}/>
@@ -60,4 +60,6 @@ export default function Eigth(){
             </div>
         </div>
     )
-}
+})
+
+export default Eigth
