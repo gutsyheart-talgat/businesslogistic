@@ -20,7 +20,7 @@ function App() {
   let eigth = useRef()
   return (
     <div className="App">
-      <Header first={first} two={second} three={third} five={fifth} six={sixth} seven={seventh}/>
+      <Header first={first} two={second} three={third} five={fifth} six={sixth} seven={seventh} eigth={eigth}/>
       <First ref={first}/>
       <Second ref={second}/>
       <Third ref={third}/>

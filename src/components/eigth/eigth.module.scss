@@ -30,44 +30,59 @@
                     line-height: 24px;
                 }
             }
-            .inputs{
+
+            .form{
                 display: flex;
                 flex-direction: column;
                 grid-gap: 24px;
-                margin: 60px 0;
-                .input{
+                margin-top: 60px;
+                .input,.textarea{
                     width: 453px;
-                    height: 49px !important;                    
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid rgba(50, 51, 63, 1);
+                    font-family: $fonts;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
                 }
-                
-            }
-            button{
-                width: 184px;
-                height: 56px;
-                background-color: $h-color;
-                border: none;
-                border-radius: 12px;
-                text-align: center;
-                a{
-                    text-decoration: none;
+                .input{
+                    height: 49px;
+                    padding: 10px;
+                }
+                .input::placeholder,.textarea::placeholder{
+                    font-family: $fonts;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: rgba(50, 51, 63, 0.3);
+                }
+                .textarea{
+                    height: 236px !important;
+                    padding: 10px 10px;
+                }
+                .textarea::placeholder{
+                    padding: 176px 0 16px ;
+                }
+                button{
+                    width: 184px;
+                    height: 56px;
+                    background-color: $h-color;
                     font-family: $fonts;
                     color: #F4F6F9;
                     font-size: 14px;
-                    width: 184px !important;
-                    height: 56px !important;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    
+                    border: none;
+                    border-radius: 12px;
+                    text-align: center;
+                    margin-top: 36px;
                 }
-                a:hover{
+                button:hover{
+                    background-color: #F4F6F9;
+                    border: 2px solid $h-color;
                     color: $h-color;
                 }
             }
-            button:hover{
-                background-color: #F4F6F9;
-                border: 2px solid $h-color;
-            }
+            
         }
         .right{
             .map{

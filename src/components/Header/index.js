@@ -3,7 +3,7 @@ import style from './header.module.scss'
 import logo from '../../img/BusinessLogistic.svg'
 
 
-export default function Header ({first,two,three,five,six,seven}){
+export default function Header ({first,two,three,five,six,seven,eigth}){
     React.useEffect(()=>{
 
         const head = document.getElementById('header')
@@ -39,7 +39,7 @@ export default function Header ({first,two,three,five,six,seven}){
                         <p className={style.reference} onClick={()=>scrollHandler(six)}>Направления</p>
                         <p className={style.reference} onClick={()=>scrollHandler(seven)}>Клиенты</p>
                     </menu>
-                    <p className={style.phone}>+996 777 77 77 77</p>
+                    <p className={style.phone} onClick={()=>scrollHandler(eigth)}>КОНТАКТЫ</p>
                 </header>
             </div>
         </div>

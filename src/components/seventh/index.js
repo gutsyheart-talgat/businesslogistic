@@ -30,7 +30,7 @@ const Seventh=forwardRef((props,ref)=>{
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow/>,
         prevArrow: <SamplePrevArrow/>,
@@ -38,38 +38,40 @@ const Seventh=forwardRef((props,ref)=>{
     return(
         <div className={style.seventh} ref={ref}>
             <h3>Наши клиенты - наша гордость</h3>
-            <Slider {...settings}>
-                <div className={style.card}>
-                    <div className={style.logo}></div>
-                    <div className={style.feedback}>
-                        <div className={style.company}>
-                            <p className={style.h}>Название компании</p>
-                            <p className={style.p}>20/10/2024</p>
+            <div className="container">
+                <Slider {...settings}>
+                    <div className={style.card}>
+                        <div className={style.logo}></div>
+                        <div className={style.feedback}>
+                            <div className={style.company}>
+                                <p className={style.h}>Название компании</p>
+                                <p className={style.p}>20/10/2024</p>
+                            </div>
+                            <p>Спасибо за отличный сервис и профессиональную поддержку. Пользуюсь не в первый раз услугами данной компании и с уверенностью могу порекомендовать друзьям и знакомым</p>
                         </div>
-                        <p>Спасибо за отличный сервис и профессиональную поддержку. Пользуюсь не в первый раз услугами данной компании и с уверенностью могу порекомендовать друзьям и знакомым</p>
                     </div>
-                </div>
-                <div className={style.card}>
-                    <div className={style.logo}></div>
-                    <div className={style.feedback}>
-                        <div className={style.company}>
-                            <p className={style.h}>Название компании</p>
-                            <p className={style.p}>20/10/2024</p>
+                    <div className={style.card}>
+                        <div className={style.logo}></div>
+                        <div className={style.feedback}>
+                            <div className={style.company}>
+                                <p className={style.h}>Название компании</p>
+                                <p className={style.p}>20/10/2024</p>
+                            </div>
+                            <p>Спасибо за отличный сервис и профессиональную поддержку. Пользуюсь не в первый раз услугами данной компании и с уверенностью могу порекомендовать друзьям и знакомым</p>
                         </div>
-                        <p>Спасибо за отличный сервис и профессиональную поддержку. Пользуюсь не в первый раз услугами данной компании и с уверенностью могу порекомендовать друзьям и знакомым</p>
                     </div>
-                </div>
-                <div className={style.card}>
-                    <div className={style.logo}></div>
-                    <div className={style.feedback}>
-                        <div className={style.company}>
-                            <p className={style.h}>Название компании</p>
-                            <p className={style.p}>20/10/2024</p>
+                    <div className={style.card}>
+                        <div className={style.logo}></div>
+                        <div className={style.feedback}>
+                            <div className={style.company}>
+                                <p className={style.h}>Название компании</p>
+                                <p className={style.p}>20/10/2024</p>
+                            </div>
+                            <p>Спасибо за отличный сервис и профессиональную поддержку. Пользуюсь не в первый раз услугами данной компании и с уверенностью могу порекомендовать друзьям и знакомым</p>
                         </div>
-                        <p>Спасибо за отличный сервис и профессиональную поддержку. Пользуюсь не в первый раз услугами данной компании и с уверенностью могу порекомендовать друзьям и знакомым</p>
                     </div>
-                </div>
-            </Slider>
+                </Slider>
+            </div>
             
         </div>
     )

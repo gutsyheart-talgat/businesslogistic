@@ -7,22 +7,6 @@
     width: 1230px;
     margin: 0 auto;
 }
-.slick-dots{
-    li.slick-active{
-        button::before{
-            color: #FFC42D !important;
-            
-        }
-    }
-}
-.slick-dots{
-    li{
-        button::before{
-            color: #FFC42D !important;
-            opacity: 0.25;
-        }
-    }
-}
 .head-fixed{
     position: fixed !important; 
     top: 0 !important;
