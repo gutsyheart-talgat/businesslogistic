@@ -1,6 +1,5 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useState } from "react";
 import style from './eigth.module.scss'
-import { TextField } from "@mui/material";
 import map from '../../img/map.jpg'
 import Location from '../../img/Location.png'
 import Call from '../../img/Call.png'
@@ -9,6 +8,7 @@ import whatsapp from '../../img/whatsapp.png'
 import twitter from '../../img/twitter.png'
 import facebook from '../../img/facebook.png'
 import { useTranslation} from 'react-i18next'
+import Swal from "sweetalert2";
 
 const Eigth= forwardRef((props,ref)=>{
     const {t}=useTranslation()
@@ -18,6 +18,10 @@ const Eigth= forwardRef((props,ref)=>{
         {id:2,name:t("eigth_name2"), text: t("eigth_text2"),img:Call},
         {id:3,name:t("eigth_name3"), text: t("eigth_text3"),img:Message}
     ]
+    const [name, setName] = useState("")
+    const [number, setNumber] = useState("")
+    const [email, setEmail] = useState("")
+    const [type, setType] = useState("")
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -37,7 +41,16 @@ const Eigth= forwardRef((props,ref)=>{
         }).then((res) => res.json());
     
         if (res.success) {
-          console.log("Success", res);
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                showConfirmButton: false,
+                timer: 1500
+            });
+            setEmail("")
+            setName("")
+            setNumber("")
+            setType("")
         }
       };
     return(
@@ -50,11 +63,11 @@ const Eigth= forwardRef((props,ref)=>{
                             <p className={style.p}>{t("eigth_p1")}<br/> {t("eigth_p2")}</p>
                         </div>
                         <form className={style.form} onSubmit={onSubmit}>
-                            <input type="text" name="name" className={style.input} required placeholder={t("eigth_input1")} autoComplete="off"/>
-                            <input type="number" name="number" className={style.input} required placeholder={t("eigth_input2")} autoComplete="off"/>
-                            <input type="email" name="email" className={style.input} required placeholder={t("eigth_input3")} autoComplete="off"/>
-                            <textarea type="text" name="type" placeholder={t("eigth_input4")} className={style.textarea} autoComplete="off"/>
-                            <button type="submit">{t("first_btn")}</button>
+                            <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)} className={style.input} required placeholder={t("eigth_input1")} autoComplete="off"/>
+                            <input type="number" name="number" value={number} onChange={(e)=>setNumber(e.target.value)} className={style.input} required placeholder={t("eigth_input2")} autoComplete="off"/>
+                            <input type="email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)} className={style.input} required placeholder={t("eigth_input3")} autoComplete="off"/>
+                            <textarea type="text" name="type" value={type} onChange={(e)=>setType(e.target.value)} placeholder={t("eigth_input4")} className={style.textarea} autoComplete="off"/>
+                            <button type="submit">{t("eigth_btn")}</button>
                         </form>
                         
                     </div>

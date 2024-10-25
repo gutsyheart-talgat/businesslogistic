@@ -14,7 +14,7 @@
     "first_auto":"Auto transportation",
     "second_h3":"Our main goal:",
     "second_p":"Ensuring smooth and secure turnkey deliveries to our customers:",
-    "second_li1":"Coordination of all participants in the process",
+    "second_li1":"Coordination of the work of all participants in the process",
     "second_li2":"Control of cargo movement",
     "second_li3":"Interaction with state authorities to obtain necessary documents",
     "second_li4":"Shipment of goods to the buyer",
@@ -26,7 +26,7 @@
     "third_name3":"Certification",
     "third_text3":"Obtaining authorization documents in the state authorities of the Kyrgyz Republic for import and export. Obtaining declaration of conformity, certificates of conformity, etc.",
     "third_name4":"Counseling",
-    "third_text4":"Our company helps with customs, tax and legislative issues on the Kyrgyz Republic, the Eurasian Economic Union and the World Trade Organization.",
+    "third_text4":"Our company assists with customs, tax legislation of the Kyrgyz Republic, the Eurasian Economic Union and the World Trade Organization.",
     "third_name5":"Insurance",
     "third_text5":"Upon customers' request, we provide cargo insurance through partner insurance complexes",
     "fourth_h3":"If your shipment is ready to go",
@@ -54,6 +54,8 @@
     "eigth_p1":"Leave a request and we'll have a specialist ",
     "eigth_p2":"will get back to you within 15 minutes.",
     "eigth_p3":"Social media",
+    "eigth_btn":"Leave a request",
+    "eigth_alert":"The application has been sent!",
     "eigth_name1":"Address:",
     "eigth_name2":"Phone:",
     "eigth_name3":"Mail:",
@@ -64,5 +66,4 @@
     "eigth_input2":"Your number",
     "eigth_input3":"Your mail",
     "eigth_input4":"Shipment type or comment"
-
 }
