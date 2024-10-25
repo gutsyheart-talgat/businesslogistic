@@ -1,21 +1,25 @@
 import React, { forwardRef } from "react";
 import style from './second.module.scss'
 import second from '../../img/second.jpg'
+import { useTranslation} from 'react-i18next'
+
 const Second = forwardRef ((props,ref)=>{
+    const {t}=useTranslation()
+
     return(
         <div className={style.second} ref={ref}>
             <div className='container'>
                 <div className={style.content}>
                     <img src={second}/>
                     <div className={style.text}>
-                        <h3>О нашей компании:</h3>
+                        <h3>{t("second_h3")}</h3>
                         <div>
-                            <p>Наша главная цель - обеспечение бесперебойных и безопасных поставок наших клиентов “под ключ”:</p>
+                            <p>{t("second_p")}</p>
                             <ul >
-                                <li>Координация всех участников процесса</li>
-                                <li>Контроль движения груза</li>
-                                <li>Взаимодействие с государственными органами для получения необходимых документов</li>
-                                <li>Отправка грузов покупателю</li>
+                                <li>{t("second_li1")}</li>
+                                <li>{t("second_li2")}</li>
+                                <li>{t("second_li3")}</li>
+                                <li>{t("second_li4")}</li>
                             </ul>
                         </div>
                         

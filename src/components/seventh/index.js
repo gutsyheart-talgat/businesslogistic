@@ -3,8 +3,11 @@ import style from './seventh.module.scss'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation} from 'react-i18next'
 
 const Seventh=forwardRef((props,ref)=>{
+    const {t}=useTranslation()
+
     function SamplePrevArrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -37,37 +40,37 @@ const Seventh=forwardRef((props,ref)=>{
       };
     return(
         <div className={style.seventh} ref={ref}>
-            <h3>Наши клиенты - наша гордость</h3>
+            <h3>{t("seventh_h3")}</h3>
             <div className="container">
                 <Slider {...settings}>
                     <div className={style.card}>
                         <div className={style.logo}></div>
                         <div className={style.feedback}>
                             <div className={style.company}>
-                                <p className={style.h}>Название компании</p>
-                                <p className={style.p}>20/10/2024</p>
+                                <p className={style.h}>{t("seventh_sliderH")}</p>
+                                <p className={style.p}>{t("seventh_sliderDate")}</p>
                             </div>
-                            <p>Спасибо за отличный сервис и профессиональную поддержку. Пользуюсь не в первый раз услугами данной компании и с уверенностью могу порекомендовать друзьям и знакомым</p>
+                            <p>{t("seventh_sliderP")}</p>
                         </div>
                     </div>
                     <div className={style.card}>
                         <div className={style.logo}></div>
                         <div className={style.feedback}>
                             <div className={style.company}>
-                                <p className={style.h}>Название компании</p>
-                                <p className={style.p}>20/10/2024</p>
+                                <p className={style.h}>{t("seventh_sliderH")}</p>
+                                <p className={style.p}>{t("seventh_sliderDate")}</p>
                             </div>
-                            <p>Спасибо за отличный сервис и профессиональную поддержку. Пользуюсь не в первый раз услугами данной компании и с уверенностью могу порекомендовать друзьям и знакомым</p>
+                            <p>{t("seventh_sliderP")}</p>
                         </div>
                     </div>
                     <div className={style.card}>
                         <div className={style.logo}></div>
                         <div className={style.feedback}>
                             <div className={style.company}>
-                                <p className={style.h}>Название компании</p>
-                                <p className={style.p}>20/10/2024</p>
+                                <p className={style.h}>{t("seventh_sliderH")}</p>
+                                <p className={style.p}>{t("seventh_sliderDate")}</p>
                             </div>
-                            <p>Спасибо за отличный сервис и профессиональную поддержку. Пользуюсь не в первый раз услугами данной компании и с уверенностью могу порекомендовать друзьям и знакомым</p>
+                            <p>{t("seventh_sliderP")}</p>
                         </div>
                     </div>
                 </Slider>

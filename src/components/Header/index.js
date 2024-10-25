@@ -1,16 +1,20 @@
 import React from "react";
 import style from './header.module.scss'
 import logo from '../../img/BusinessLogistic.svg'
+import { useTranslation } from "react-i18next";
 
 
 export default function Header ({first,two,three,five,six,seven,eigth}){
+    const {t,i18n}=useTranslation()
+    const changeLanguage = (lang)=> {
+        i18n.changeLanguage(lang)
+    }
     React.useEffect(()=>{
 
         const head = document.getElementById('header')
 
         window.addEventListener('scroll',function(){
             const scrollPos = window.scrollY
-            console.log(scrollPos)
             if(scrollPos>48){
                 head.classList.add('head-fixed')
             } else{
@@ -33,13 +37,20 @@ export default function Header ({first,two,three,five,six,seven,eigth}){
                 <header className={style.header}>
                     <p onClick={()=>scrollHandler(first)} className={style.logo}><img src={logo} /></p>
                     <menu className={style.menu}>
-                        <p className={style.reference} onClick={()=>scrollHandler(two)}>О нас</p>
-                        <p className={style.reference} onClick={()=>scrollHandler(three)}>Услуги</p>
-                        <p className={style.reference} onClick={()=>scrollHandler(five)}>Преимущества</p>
-                        <p className={style.reference} onClick={()=>scrollHandler(six)}>Направления</p>
-                        <p className={style.reference} onClick={()=>scrollHandler(seven)}>Клиенты</p>
+                        <p className={style.reference} onClick={()=>scrollHandler(two)}>{t("header_onas")}</p>
+                        <p className={style.reference} onClick={()=>scrollHandler(three)}>{t("header_service")}</p>
+                        <p className={style.reference} onClick={()=>scrollHandler(five)}>{t("header_advantage")}</p>
+                        <p className={style.reference} onClick={()=>scrollHandler(six)}>{t("header_direction")}</p>
+                        <p className={style.reference} onClick={()=>scrollHandler(seven)}>{t("header_client")}</p>
                     </menu>
-                    <p className={style.phone} onClick={()=>scrollHandler(eigth)}>КОНТАКТЫ</p>
+                    <div className={style.right}>
+                        <p className={style.phone} onClick={()=>scrollHandler(eigth)}>{t("header_contact")}</p>
+                        <div className={style.translate}>
+                            <button className={style.btns} onClick={()=> changeLanguage('ru')}>RU</button>
+                            <div className={style.line}/>
+                            <button className={style.btns} onClick={()=> changeLanguage('en')}>EN</button>
+                        </div>
+                    </div>
                 </header>
             </div>
         </div>

@@ -8,12 +8,15 @@ import Message from '../../img/Message.png'
 import whatsapp from '../../img/whatsapp.png'
 import twitter from '../../img/twitter.png'
 import facebook from '../../img/facebook.png'
+import { useTranslation} from 'react-i18next'
 
 const Eigth= forwardRef((props,ref)=>{
+    const {t}=useTranslation()
+
     const right = [
-        {id:1,name:"Адрес:", text: " Панфилова, 178 (БЦ ОРИОН 2)",img:Location},
-        {id:1,name:"Телефон:", text: " +996707505822",img:Call},
-        {id:1,name:"Почта:", text: "bizneslogistik820@gmail.com",img:Message}
+        {id:1,name:t("eigth_name1"), text: t("eigth_text1"),img:Location},
+        {id:2,name:t("eigth_name2"), text: t("eigth_text2"),img:Call},
+        {id:3,name:t("eigth_name3"), text: t("eigth_text3"),img:Message}
     ]
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -43,21 +46,15 @@ const Eigth= forwardRef((props,ref)=>{
                 <div className={style.content}>
                     <div className={style.left}>
                         <div className={style.top}>
-                            <p className={style.h}>Оставьте заявку</p>
-                            <p className={style.p}>Оставьте заявку, и наш специалист <br/> свяжется с вами в течение 15 минут.</p>
+                            <p className={style.h}>{t("eigth_h3")}</p>
+                            <p className={style.p}>{t("eigth_p1")}<br/> {t("eigth_p2")}</p>
                         </div>
-                        {/* <div className={style.inputs}>
-                            <TextField label="Ваше имя" className={style.input} variant="standard"/>
-                            <TextField label="Ваш номер"  className={style.input} variant="standard"/>
-                            <TextField label="Ваша почта" className={style.input} variant="standard"/>
-                            <TextField label="Тип груза или комментарий"  className={style.input} multiline maxRows={3} variant="standard"/>
-                        </div> */}
                         <form className={style.form} onSubmit={onSubmit}>
-                            <input type="text" name="name" className={style.input} required placeholder="Ваше имя" autoComplete="off"/>
-                            <input type="number" name="number" className={style.input} required placeholder="Ваш номер" autoComplete="off"/>
-                            <input type="email" name="email" className={style.input} required placeholder="Ваша почта" autoComplete="off"/>
-                            <textarea type="text" name="type" placeholder="Тип груза или комментарий" className={style.textarea} autoComplete="off"/>
-                            <button type="submit">Сделать заказ</button>
+                            <input type="text" name="name" className={style.input} required placeholder={t("eigth_input1")} autoComplete="off"/>
+                            <input type="number" name="number" className={style.input} required placeholder={t("eigth_input2")} autoComplete="off"/>
+                            <input type="email" name="email" className={style.input} required placeholder={t("eigth_input3")} autoComplete="off"/>
+                            <textarea type="text" name="type" placeholder={t("eigth_input4")} className={style.textarea} autoComplete="off"/>
+                            <button type="submit">{t("first_btn")}</button>
                         </form>
                         
                     </div>
@@ -77,7 +74,7 @@ const Eigth= forwardRef((props,ref)=>{
                             }
                         </div>
                         <div className={style.media}>
-                            <p className={style.mediaP}>Социальные сети</p>
+                            <p className={style.mediaP}>{t("eigth_p3")}</p>
                             <div className={style.icons}>
                                 <img src={whatsapp} alt="whatsapp"/>
                                 <img src={facebook} alt="facebook"/>

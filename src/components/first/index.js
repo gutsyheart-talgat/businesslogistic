@@ -3,30 +3,32 @@ import style from './first.module.scss'
 import plane from '../../img/plane.svg'
 import train from '../../img/train.svg'
 import truck from '../../img/truck.svg'
+import { useTranslation} from 'react-i18next'
 
 const First=forwardRef ((props,ref)=>{
+    const {t}=useTranslation()
     return (
         <div className={`${style.first}`} ref={ref}>
             <div className="container">
                 <div className={style.main}>
-                    <h1>Грузоперевозки <span>по всему миру</span></h1>
-                    <p>Мы обеспечиваем полный цикл перевозки, включая сертификацию</p>
-                    <button className={style.btn}><a href="https://wa.me/996558227877?text=hello!">Сделать заказ</a></button>
+                    <h1>{t("first_h1")} <span>{t("first_h1_span")}</span></h1>
+                    <p>{t("first_p")}</p>
+                    <button className={style.btn}><a href="https://wa.me/996558227877?text=hello!">{t("first_btn")}</a></button>
                 </div>
                 <div className={style.footer}>
                     <div className={style.element}>
                         <div><img src={plane}/></div>
-                        <p>Авиа перевозки</p>
+                        <p>{t("first_avia")}</p>
                     </div>
                     <div className={style.line}/>
                     <div  className={style.element}>
                         <div><img src={train}/></div>
-                        <p>ЖД перевозки</p>
+                        <p>{t("first_jd")}</p>
                     </div>
                     <div className={style.line}/>
                     <div className={style.element}>
                         <div><img src={truck}/></div>
-                        <p>Авто перевозки</p>
+                        <p>{t("first_auto")}</p>
                     </div>
                 </div>
             </div>

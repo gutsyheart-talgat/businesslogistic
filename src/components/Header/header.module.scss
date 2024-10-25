@@ -35,13 +35,36 @@
             
         }
     
-        .phone{
-            font-weight: 700;
-            font-family: $fonts;
-            color: $white-color;
-            font-size: 19px;
-            line-height: 28.5px;
-            cursor: pointer;
+        .right{
+            display: flex;
+            grid-gap: 20px;
+            .phone{
+                font-weight: 700;
+                font-family: $fonts;
+                color: $white-color;
+                font-size: 19px;
+                line-height: 28.5px;
+                cursor: pointer;
+            }
+            .translate{
+                display: flex;
+                grid-gap: 5px;
+                .btns{
+                    border: none;
+                    background: none;
+                    font-weight: 700;
+                    font-family: $fonts;
+                    color: $white-color;
+                    font-size: 19px;
+                    line-height: 28.5px;
+                    cursor: pointer;
+                }
+                .line{
+                    height: 28.5px;
+                    width: 0;
+                    border: 1px solid $white-color;
+                }
+            }
         }
     }
 }
