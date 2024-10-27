@@ -1,31 +1,190 @@
 @import '../../App.scss';
 
-
-.headerBack{
-    position: absolute;
-    top: 49px;
-    height: 59px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    .header{
+@media(max-width:450px){
+    .headerBack{
+        position: absolute;
+        top: 49px;
+        height: 59px;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        height: 29px;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 29px;
+            .menu{
+                display: none !important;
+                
+            }
+            .logo{
+                height: 24px !important;
+            }
+            .right{
+                display: flex;
+                grid-gap: 5px;
+                .phone{
+                    font-size: 15px !important;
+                    line-height: 24px !important;
+                }
+                .translate{
+                    display: flex;
+                    grid-gap: 3px !important;
+                    .btns{
+                        font-size: 15px !important;
+                        line-height: 24px !important;
+                    }
+                    .line{
+                        height: 24px !important;
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:900px) and (min-width:450px){
+    .headerBack{
+        position: absolute;
+        top: 49px;
+        height: 59px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 29px;
+            .menu{
+                display: none !important;
+                
+            }
+            .right{
+                display: flex;
+                grid-gap: 15px;
+                .phone{
+                    font-size: 19px;
+                    line-height: 28.5px;
+                }
+                .translate{
+                    display: flex;
+                    grid-gap: 5px;
+                    .btns{
+                        font-size: 19px;
+                        line-height: 28.5px;
+                    }
+                    .line{
+                        height: 28.5px;
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1280px) and (min-width:900px){
+    .headerBack{
+        position: absolute;
+        top: 49px;
+        height: 59px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 29px;
+            .menu{
+                display: flex;
+                grid-gap: 30px;
+                width: 568px;
+                .reference{
+                    font-size: 19px;
+                    line-height: 28.5px;
+                }
+            }
+        
+            .right{
+                display: flex;
+                grid-gap: 20px;
+                .phone{
+                    font-size: 19px;
+                    line-height: 28.5px;
+                }
+                .translate{
+                    display: flex;
+                    grid-gap: 5px;
+                    .btns{
+                        font-size: 19px;
+                        line-height: 28.5px;
+                    }
+                    .line{
+                        height: 28.5px;
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:1280px){
+    .headerBack{
+        position: absolute;
+        top: 49px;
+        height: 59px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 29px;
+            .menu{
+                display: flex;
+                grid-gap: 30px;
+                width: 568px;
+                
+                .reference{
+                    font-size: 19px;
+                    line-height: 28.5px;
+                }
+            }
+        
+            .right{
+                display: flex;
+                grid-gap: 20px;
+                .phone{
+                    font-size: 19px;
+                    line-height: 28.5px;
+                }
+                .translate{
+                    display: flex;
+                    grid-gap: 5px;
+                    .btns{
+                        font-size: 19px;
+                        line-height: 28.5px;
+                    }
+                    .line{
+                        height: 28.5px;
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.headerBack{
+    .header{
         .logo:hover{
             cursor: pointer;
         }
         .menu{
-            display: flex;
-            grid-gap: 30px;
-            width: 568px;
-            
             .reference{
                 font-family: $fonts;
                 color: $white-color;
-                font-size: 19px;
-                line-height: 28.5px;
                 font-weight: 400;
             }
             .reference:hover{
@@ -36,32 +195,22 @@
         }
     
         .right{
-            display: flex;
-            grid-gap: 20px;
             .phone{
                 font-weight: 700;
                 font-family: $fonts;
                 color: $white-color;
-                font-size: 19px;
-                line-height: 28.5px;
                 cursor: pointer;
             }
             .translate{
-                display: flex;
-                grid-gap: 5px;
                 .btns{
                     border: none;
                     background: none;
                     font-weight: 700;
                     font-family: $fonts;
                     color: $white-color;
-                    font-size: 19px;
-                    line-height: 28.5px;
                     cursor: pointer;
                 }
                 .line{
-                    height: 28.5px;
-                    width: 0;
                     border: 1px solid $white-color;
                 }
             }

@@ -3,9 +3,29 @@
     padding: 0;
     margin: 0;
 }
-.container{
-    width: 1230px;
-    margin: 0 auto;
+@media(max-width:450px){
+    .container{
+        width: 355px !important;
+        margin: 0 auto;
+    }
+}
+@media(max-width:900px) and (min-width:450px){
+    .container{
+        width: 755px !important;
+        margin: 0 auto;
+    }
+}
+@media(max-width:1280px) and (min-width:900px){
+    .container{
+        width: 1230px !important;
+        margin: 0 auto;
+    }
+}
+@media(min-width:1280px){
+    .container{
+        width: 1230px !important;
+        margin: 0 auto;
+    }
 }
 .head-fixed{
     position: fixed !important; 
