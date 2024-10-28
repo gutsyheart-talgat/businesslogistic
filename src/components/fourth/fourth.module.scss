@@ -1,7 +1,44 @@
 @import '../../App.scss';
+
+@media(max-width:450px) {
+    .fourth{
+        height: 346px;
+        text-align: center;
+        h3{
+            font-size: 30px;
+            line-height: 34.5px;
+        }
+    }
+}
+@media(max-width:900px) and (min-width:450px){
+    .fourth{
+        height: 375px;
+        h3{
+            font-size: 36px;
+            line-height: 41.4px;
+        }
+    }
+}
+@media(max-width:1280px) and (min-width:900px){
+    .fourth{
+        height: 375px;
+        h3{
+            font-size: 36px;
+            line-height: 41.4px;
+        }
+    }
+}
+@media(min-width:1280px){
+    .fourth{
+        height: 375px;
+        h3{
+            font-size: 36px;
+            line-height: 41.4px;
+        }
+    }
+}
 .fourth{
     width: 100%;
-    height: 375px;
     background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../../img/fourth.jpg);
     background-size: no-repeat;
     background-size: cover;
@@ -13,17 +50,15 @@
     h3{
         font-family: $fonts;
         color: $white-color;
-        font-size: 36px;
-        line-height: 41.4px;
         font-weight: 700;
         margin-bottom: 14px;
     }
     p{
         font-family: $fonts;
         color: $white-color;
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        font-weight: 400;
         margin-bottom: 40px;
     }
     button{

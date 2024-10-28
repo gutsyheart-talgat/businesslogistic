@@ -1,62 +1,223 @@
 @import '../../App.scss';
+
+
+@media(max-width:450px){
+    .seventh{
+        padding: 60px 0;
+        h3{
+            font-size: 32px;
+            line-height: 41.4px;
+        }
+        .slider{
+            margin-top: 40px;
+            
+            .card{
+                width: 100% !important;
+                height: 181px !important;
+                padding: 10px 0;
+                .logo{
+                    width: 48px;
+                    height: 48px;
+                }
+                .feedback{
+                    width: 290px;
+                    height: 161px;
+                    padding: 8px 12px;
+                    .company{
+                        width: 161px;
+                        margin-bottom: 10px;
+                        .h{
+                            font-size: 16px;
+                            line-height: 18.4px;
+                        }
+                        .p{
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media(max-width:900px) and (min-width:450px){
+    .seventh{
+        padding: 100px 0;
+        h3{
+            font-size: 36px;
+            line-height: 41.4px;
+        }
+        .slider{
+            margin-top: 54px;
+            
+            .card{
+                width: 100% !important;
+                height: 161px !important;
+                padding: 10px 0;
+                grid-gap: 10px;
+                
+                .logo{
+                    width: 60px;
+                    height: 60px;
+                }
+                .feedback{
+                    width: 665px;
+                    height: 141px;
+                    padding: 18px 32px;
+                    .company{
+                        height: 36px;
+                        width: 161px;
+                        margin-bottom: 25px;
+                        .h{
+                            font-size: 16px;
+                            line-height: 18.4px;
+                        }
+                        .p{
+                            font-size: 14px;
+                            line-height: 16.1px;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media(max-width:1280px) and (min-width:900px){
+    .seventh{
+        padding: 100px 0;
+        h3{
+            font-size: 36px;
+            line-height: 41.4px;
+        }
+        .slider{
+            margin-top: 54px ;
+            .card{
+                width: 100% !important;
+                height: 161px !important;
+                padding: 10px 0;
+                grid-gap: 15px;
+                .logo{
+                    width: 60px;
+                    height: 60px;
+                }
+                .feedback{
+                    width: 692px;
+                    height: 141px;
+                    padding: 18px 32px;
+                    .company{
+                        height: 36px;
+                        width: 161px;
+                        margin-bottom: 25px;
+                        .h{
+                            font-size: 16px;
+                            line-height: 18.4px;
+                        }
+                        .p{
+                            font-size: 14px;
+                            line-height: 16.1px;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media(min-width:1280px){
+    .seventh{
+        padding: 100px 0;
+        h3{
+            font-size: 36px;
+            line-height: 41.4px;
+        }
+        .slider{
+            margin-top: 54px ;
+            .card{
+                width: 100% !important;
+                height: 161px !important;
+                padding: 10px 0;
+                grid-gap: 15px;
+        
+                .logo{
+                    width: 60px;
+                    height: 60px;
+                }
+                .feedback{
+                    width: 692px;
+                    height: 141px;
+                    padding: 18px 32px;
+        
+                    .company{
+                        height: 36px;
+                        width: 161px;
+                        margin-bottom: 25px;
+                        .h{
+                            font-size: 16px;
+                            line-height: 18.4px;
+                        }
+                        .p{
+                            font-size: 14px;
+                            line-height: 16.1px;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
 .seventh{
-    padding: 100px 0;
     h3{
         font-family: $fonts;
         color: $h-color;
-        font-size: 36px;
-        line-height: 41.4px;
         text-align: center;
     }
     .slider{
-        margin-top: 54px ;
         .card{
             display: flex !important;
             justify-content: center;
-            width: 100% !important;
-            height: 161px !important;
-            padding: 10px 0;
-            grid-gap: 15px;
-    
             .logo{
-                width: 60px;
-                height: 60px;
                 border-radius: 100px;
                 background-color: $white-color;
                 box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
             }
             .feedback{
-                width: 692px;
-                height: 141px;
                 border-radius: 31px;
                 background-color: $white-color;
                 box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
-                padding: 18px 32px;
-    
                 .company{
-                    height: 36px;
-                    width: 161px;
-                    margin-bottom: 25px;
                     .h{
                         font-family: $fonts;
                         color: $h-color;
                         font-weight: 700;
-                        font-size: 16px;
-                        line-height: 18.4px;
                     }
                     .p{
                         font-family: $fonts;
                         color: #979797;
                         font-weight: 400;
-                        font-size: 14px;
-                        line-height: 16.1px;
                     }
                 }
                 p{
                     font-family: $fonts;
                     color: $h-color;
-                    font-size: 14px;
-                    line-height: 21px;
                     font-weight: 400;
                 }
             }
