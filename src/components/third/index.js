@@ -35,7 +35,7 @@ const Third = forwardRef((props,ref)=>{
                     }
                 </div>
                 <div className={style.button}>
-                    <button><a href="https://wa.me/996558227877?text=hello!">{t("first_btn")}</a></button>
+                    <button><a href="https://wa.me/996707505822?text=Здравствуйте!">{t("first_btn")}</a></button>
                 </div>
             </div>
         </div>

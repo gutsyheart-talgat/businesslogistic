@@ -5,8 +5,8 @@ import Location from '../../img/Location.png'
 import Call from '../../img/Call.png'
 import Message from '../../img/Message.png'
 import whatsapp from '../../img/whatsapp.png'
-import twitter from '../../img/twitter.png'
-import facebook from '../../img/facebook.png'
+import telegram from '../../img/telegram.png'
+import instagram from '../../img/instagram.png'
 import { useTranslation} from 'react-i18next'
 import Swal from "sweetalert2";
 
@@ -63,7 +63,7 @@ const Eigth= forwardRef((props,ref)=>{
                             <p className={style.p}>{t("eigth_p1")}<br/> {t("eigth_p2")}</p>
                         </div>
                         <form className={style.form} onSubmit={onSubmit}>
-                            <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)} className={style.input} required placeholder={t("eigth_input1")} autoComplete="off"/>
+                            <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)} className={style.input} required placeholder={t("eigth_input1")}  autoComplete="off"/>
                             <input type="number" name="number" value={number} onChange={(e)=>setNumber(e.target.value)} className={style.input} required placeholder={t("eigth_input2")} autoComplete="off"/>
                             <input type="email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)} className={style.input} required placeholder={t("eigth_input3")} autoComplete="off"/>
                             <textarea type="text" name="type" value={type} onChange={(e)=>setType(e.target.value)} placeholder={t("eigth_input4")} className={style.textarea} autoComplete="off"/>
@@ -73,25 +73,27 @@ const Eigth= forwardRef((props,ref)=>{
                     </div>
                     <div className={style.right}>
                         <img src={map} className={style.map}/>
-                        <div className={style.info}>
-                            {
-                                right.map(el=>
-                                    <div key={el.id} className={style.element}>
-                                        <div className={style.img}><img alt={el.name} src={el.img}/></div>
-                                        <div className={style.infoText}>
-                                            <p className={style.name}>{el.name}</p>
-                                            <p className={style.text}>{el.text}</p>
+                        <div>
+                            <div className={style.info}>
+                                {
+                                    right.map(el=>
+                                        <div key={el.id} className={style.element}>
+                                            <div className={style.img}><img alt={el.name} src={el.img}/></div>
+                                            <div className={style.infoText}>
+                                                <p className={style.name}>{el.name}</p>
+                                                <p className={style.text}>{el.text}</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                )
-                            }
-                        </div>
-                        <div className={style.media}>
-                            <p className={style.mediaP}>{t("eigth_p3")}</p>
-                            <div className={style.icons}>
-                                <img src={whatsapp} alt="whatsapp"/>
-                                <img src={facebook} alt="facebook"/>
-                                <img src={twitter} alt="twitter"/>
+                                    )
+                                }
+                            </div>
+                            <div className={style.media}>
+                                <p className={style.mediaP}>{t("eigth_p3")}</p>
+                                <div className={style.icons}>
+                                    <a href="https://wa.me/996707505822?text=Здравствуйте!"><img src={whatsapp} alt="whatsapp"/></a>
+                                    <img src={instagram} alt="instagram"/>
+                                    <a href="tg://996707505822"><img src={telegram} alt="telegram"/></a>
+                                </div>
                             </div>
                         </div>
                     </div>

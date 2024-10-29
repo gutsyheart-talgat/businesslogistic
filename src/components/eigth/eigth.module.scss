@@ -1,68 +1,447 @@
 @import "../../App.scss";
 
-.eigth{
-    width: 100%;
-    height: 1024px;
-    display: flex;
-    background: linear-gradient( to right, #F4F6F9 50%, #32333F 50%);
-
-    .content{
+@media(max-width:450px){
+    .eigth{
+        width: 100%;
+        height: 1520px;
+        background: linear-gradient(  #F4F6F9 685px, #32333F 833px);
+        .content{
+            padding: 60px 0;
+            .left{
+                margin-bottom: 120px;
+                .top{
+                    .h{
+                        font-size: 32px;
+                        line-height: 36.8px;
+                        margin-bottom: 20px;
+                    }
+                    .p{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+    
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 24px;
+                    margin-top: 32px;
+                    .input,.textarea{
+                        width: 100%;
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                    .input{
+                        height: 49px;
+                        padding: 10px;
+                    }
+                    .input::placeholder,.textarea::placeholder{
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                    .textarea{
+                        height: 121px !important;
+                        padding: 10px 10px;
+                    }
+                    .textarea::placeholder{
+                        padding: 61px 0 16px ;
+                    }
+                    
+                }
+                
+            }
+            .right{
+                
+                .map{
+                    width: 353px;
+                    height: 353px;
+                    margin-bottom: 47px;
+                }
+                .info{
+                    width: 353px;
+                    height: 202px;
+                    padding: 25px 34px;
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 14px;
+                    .element{
+                        display: flex;
+    
+                        
+                        .infoText{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 13px;
+                            grid-gap: 5px;
+    
+                            .name,.text{
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+                .media{
+                    margin-top: 20px;
+                    .mediaP{
+                        font-size: 18px;
+                        line-height: 20.7px;
+                    }
+                    .icons{
+                        margin-top: 20px;
+                        display: flex;
+                        grid-gap: 20px;                        
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media(max-width:900px) and (min-width:450px){
+    .eigth{
+        width: 100%;
+        height: 1401px;
+        background: linear-gradient( to bottom, #F4F6F9 839px, #32333F 562px);
+        .content{
+            height: 1400px;
+            padding: 100px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .left{
+                .top{
+                    .h{
+                        font-size: 36px;
+                        line-height: 41.4px;
+                        margin-bottom: 20px;
+                    }
+                    .p{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+    
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 24px;
+                    margin-top: 60px;
+                    .input,.textarea{
+                        width: 100%;
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                    .input{
+                        height: 49px;
+                        padding: 10px;
+                    }
+                    .input::placeholder,.textarea::placeholder{
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                    .textarea{
+                        height: 159px !important;
+                        padding: 10px 10px;
+                    }
+                    .textarea::placeholder{
+                        padding: 99px 0 16px ;
+                    }
+                    
+                }
+                
+            }
+            .right{
+                display: flex;
+                justify-content: space-between;
+                .map{
+                    width: 362px;
+                    height: 362px;
+                }
+                .info{
+                    width: 362px;
+                    height: 202px;
+                    padding: 25px 34px;
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 14px;
+                    .element{
+                        display: flex;
+    
+                        
+                        .infoText{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 13px;
+                            grid-gap: 5px;
+    
+                            .name,.text{
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+                .media{
+                    margin-top: 69px;
+    
+                    .mediaP{
+                        font-size: 18px;
+                        line-height: 20.7px;
+                    }
+                    .icons{
+                        margin-top: 20px;
+                        display: flex;
+                        grid-gap: 20px;
+    
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media(max-width:1280px) and (min-width:900px){
+    .eigth{
+        width: 100%;
+        height: 1024px;
         display: flex;
-        justify-content: space-between;
-        padding-top: 131px;
-        height: 100%;
+        background: linear-gradient( to right, #F4F6F9 50%, #32333F 50%);
+        .content{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 131px;
+            height: 100%;
+    
+            .left{
+                .top{
+                    .h{
+                        font-size: 36px;
+                        line-height: 41.4px;
+                        margin-bottom: 20px;
+                    }
+                    .p{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+    
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 24px;
+                    margin-top: 60px;
+                    .input,.textarea{
+                        width: 453px;
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                    .input{
+                        height: 49px;
+                        padding: 10px;
+                    }
+                    .input::placeholder,.textarea::placeholder{
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                    .textarea{
+                        height: 236px !important;
+                        padding: 10px 10px;
+                    }
+                    .textarea::placeholder{
+                        padding: 176px 0 16px ;
+                    }
+                    
+                }
+                
+            }
+            .right{
+                .map{
+                    width: 420px;
+                    height: 420px;
+                    margin-bottom: 32px;
+                }
+                .info{
+                    width: 420px;
+                    height: 192px;
+                    padding: 25px 34px;
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 14px;
+                    .element{
+                        display: flex;
+                        height: 38px;
+    
+                        
+                        .infoText{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 13px;
+                            grid-gap: 3px;
+    
+                            .name,.text{
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+                .media{
+                    margin-top: 25px;
+    
+                    .mediaP{
+                        font-size: 18px;
+                        line-height: 20.7px;
+                    }
+                    .icons{
+                        margin-top: 20px;
+                        display: flex;
+                        grid-gap: 20px;
+    
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media(min-width:1280px){
+    .eigth{
+        width: 100%;
+        height: 1024px;
+        display: flex;
+        background: linear-gradient( to right, #F4F6F9 50%, #32333F 50%);
+        .content{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 131px;
+            height: 100%;
+    
+            .left{
+                .top{
+                    .h{
+                        font-size: 36px;
+                        line-height: 41.4px;
+                        margin-bottom: 20px;
+                    }
+                    .p{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+    
+                .form{
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 24px;
+                    margin-top: 60px;
+                    .input,.textarea{
+                        width: 453px;
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                    .input{
+                        height: 49px;
+                        padding: 10px;
+                    }
+                    .input::placeholder,.textarea::placeholder{
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                    .textarea{
+                        height: 236px !important;
+                        padding: 10px 10px;
+                    }
+                    .textarea::placeholder{
+                        padding: 176px 0 16px ;
+                    }
+                    
+                }
+                
+            }
+            .right{
+                .map{
+                    width: 420px;
+                    height: 420px;
+                    margin-bottom: 32px;
+                }
+                .info{
+                    width: 420px;
+                    height: 192px;
+                    padding: 25px 34px;
+                    display: flex;
+                    flex-direction: column;
+                    grid-gap: 14px;
+                    .element{
+                        display: flex;
+                        height: 38px;
+    
+                        
+                        .infoText{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 13px;
+                            grid-gap: 3px;
+    
+                            .name,.text{
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+                .media{
+                    margin-top: 25px;
+    
+                    .mediaP{
+                        font-size: 18px;
+                        line-height: 20.7px;
+                    }
+                    .icons{
+                        margin-top: 20px;
+                        display: flex;
+                        grid-gap: 20px;
+    
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+}
 
+.eigth{
+    
+    .content{
         .left{
             .top{
                 .h{
                     font-family: $fonts;
                     color: $h-color;
                     font-weight: 700;
-                    font-size: 36px;
-                    line-height: 41.4px;
-                    margin-bottom: 20px;
                 }
                 .p{
                     font-family: $fonts;
                     color: $h-color;
                     font-weight: 400;
-                    font-size: 16px;
-                    line-height: 24px;
                 }
             }
 
             .form{
-                display: flex;
-                flex-direction: column;
-                grid-gap: 24px;
-                margin-top: 60px;
                 .input,.textarea{
-                    width: 453px;
                     border: none;
                     background: none;
                     border-bottom: 1px solid rgba(50, 51, 63, 1);
                     font-family: $fonts;
                     font-weight: 400;
-                    font-size: 20px;
-                    line-height: 23px;
-                }
-                .input{
-                    height: 49px;
-                    padding: 10px;
                 }
                 .input::placeholder,.textarea::placeholder{
                     font-family: $fonts;
                     font-weight: 400;
-                    font-size: 20px;
-                    line-height: 23px;
                     color: rgba(50, 51, 63, 0.3);
-                }
-                .textarea{
-                    height: 236px !important;
-                    padding: 10px 10px;
-                }
-                .textarea::placeholder{
-                    padding: 176px 0 16px ;
                 }
                 button{
                     width: 184px;
@@ -86,71 +465,42 @@
         }
         .right{
             .map{
-                width: 420px;
-                height: 420px;
                 border-radius: 24px;
-                margin-bottom: 32px;
             }
             .info{
-                width: 420px;
-                height: 192px;
                 background-color: #ffffff;
                 border-radius: 24px;
-                padding: 25px 34px;
-                display: flex;
-                flex-direction: column;
-                grid-gap: 14px;
                 .element{
-                    display: flex;
-                    height: 38px;
-
                     .img{
-                        width: 38px;
-                        height: 38px;
                         border-radius: 100px;
                         background-color: #ffffff;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        width: 38px;
+                        height: 38px;
                     }
                     .infoText{
-                        display: flex;
-                        align-items: center;
-                        margin-left: 13px;
-                        grid-gap: 3px;
-
                         .name{
                             font-family: $fonts;
                             color: $h-color;
                             font-weight: 700;
-                            font-size: 16px;
-                            line-height: 24px;
                         }
                         .text{
                             font-family: $fonts;
                             color: $h-color;
                             font-weight: 400;
-                            font-size: 16px;
-                            line-height: 24px;
                         }
                     }
                 }
             }
             .media{
-                margin-top: 25px;
-
                 .mediaP{
                     font-family: $fonts;
                     font-weight: 700;
-                    font-size: 18px;
-                    line-height: 20.7px;
                     color: rgba(255, 255, 255, 1);
                 }
                 .icons{
-                    margin-top: 20px;
-                    display: flex;
-                    grid-gap: 20px;
-
                     img{
                         width: 50px;
                         height: 50px;

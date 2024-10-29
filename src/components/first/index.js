@@ -14,7 +14,7 @@ const First=forwardRef ((props,ref)=>{
                     <div className={style.main}>
                         <h1>{t("first_h1")} <span>{t("first_h1_span")}</span></h1>
                         <p>{t("first_p")}</p>
-                        <button className={style.btn}><a href="https://wa.me/996558227877?text=hello!">{t("first_btn")}</a></button>
+                        <button className={style.btn}><a href="https://wa.me/996707505822?text=Здравствуйте!">{t("first_btn")}</a></button>
                     </div>
                     <div className={style.footer}>
                         <div className={style.element}>

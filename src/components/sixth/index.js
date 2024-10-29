@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import style from './sixth.module.scss'
-import world from '../../img/world.svg'
+import worldEN from '../../img/worldEN.svg'
+import worldRU from '../../img/worldRU.svg'
 import { useTranslation} from 'react-i18next'
 
 const Sixth=forwardRef((props,ref)=>{
@@ -10,7 +11,7 @@ const Sixth=forwardRef((props,ref)=>{
         <div className={style.sixth} ref={ref}>
             <div className="container">
                 <p>{t("sixth_p")}</p>
-                <img src={world} alt="world"/>
+                <img src={localStorage.getItem('i18nextLng') === "en" ? worldEN : worldRU} alt="world"/>
             </div>
         </div>
     )
