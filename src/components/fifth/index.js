@@ -11,6 +11,7 @@ import { useTranslation} from 'react-i18next'
 const Fifth = forwardRef((props,ref)=>{
     const {t}=useTranslation()
 
+    
     const elements = [
         {id:1,name:t("fifth_name1"), text:t("fifth_text1"),img:Lock},
         {id:2,name:t("fifth_name2"), text:t("fifth_text2"),img:truck},

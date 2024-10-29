@@ -53,6 +53,8 @@ const Eigth= forwardRef((props,ref)=>{
             setType("")
         }
       };
+
+      
     return(
         <div className={style.eigth} ref={ref}>
             <div className="container">
