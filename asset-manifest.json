@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/businesslogistic/static/css/main.e09bb289.css",
+    "main.js": "/businesslogistic/static/js/main.8ad76c9b.js",
+    "static/media/fourth.jpg": "/businesslogistic/static/media/fourth.e409c10ab66b6c6b5368.jpg",
+    "static/media/worldEN.svg": "/businesslogistic/static/media/worldEN.a19545330a6749f771acb49743de7242.svg",
+    "static/media/worldRU.svg": "/businesslogistic/static/media/worldRU.e056c14512cc14affefc10f022cda3d9.svg",
+    "static/media/first.png": "/businesslogistic/static/media/first.c93099a74822f70a5876.png",
+    "static/media/second.jpg": "/businesslogistic/static/media/second.9de9a74a9860e681b45b.jpg",
+    "static/media/map.jpg": "/businesslogistic/static/media/map.6ea18846c87d902ac7b9.jpg",
+    "static/media/logistic.png": "/businesslogistic/static/media/logistic.8382fe1ccdb9c55195d4.png",
+    "static/media/certificate.png": "/businesslogistic/static/media/certificate.253b9f55fed4d28a5e57.png",
+    "static/media/insurence.png": "/businesslogistic/static/media/insurence.1b8b410cfecba6dca76f.png",
+    "static/media/customs.png": "/businesslogistic/static/media/customs.f1a722d2d18541de45e8.png",
+    "static/media/consult.png": "/businesslogistic/static/media/consult.a08d9d7af7c15182cfa0.png",
+    "static/media/finmarine.png": "/businesslogistic/static/media/finmarine.51f7e5a7173f54bb87f9.png",
+    "static/media/energystar.jpg": "/businesslogistic/static/media/energystar.809eb8de00decf95b7bf.jpg",
+    "static/media/BusinessLogistic.svg": "/businesslogistic/static/media/BusinessLogistic.ecc024192a5df0edbd76cd52c91956da.svg",
+    "static/media/train.svg": "/businesslogistic/static/media/train.bf75b8113b31680c7d0e41e7f5635670.svg",
+    "static/media/slick.svg": "/businesslogistic/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/businesslogistic/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/Discount.svg": "/businesslogistic/static/media/Discount.328f0adb5d584e1f30398a7808b96b9c.svg",
+    "static/media/slick.ttf": "/businesslogistic/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/Heart.svg": "/businesslogistic/static/media/Heart.72084bc7dc5268d017855f5ee50c25f8.svg",
+    "static/media/Paper.svg": "/businesslogistic/static/media/Paper.83b3b7c651198257d21efc0711f22eb0.svg",
+    "static/media/slick.woff": "/businesslogistic/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/Shield.svg": "/businesslogistic/static/media/Shield.ed5961e8185d473ec7f8a48eb79d65c8.svg",
+    "static/media/truck.svg": "/businesslogistic/static/media/truck.f403d0edfd492f756ddd9f396e029202.svg",
+    "index.html": "/businesslogistic/index.html",
+    "static/media/Lock.svg": "/businesslogistic/static/media/Lock.8008f47e1025fb47f7b20f52a7707c1b.svg",
+    "static/media/plane.svg": "/businesslogistic/static/media/plane.174702043cc0eaa872ba86ebc073de79.svg",
+    "static/media/getFetch.cjs": "/businesslogistic/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "main.e09bb289.css.map": "/businesslogistic/static/css/main.e09bb289.css.map",
+    "main.8ad76c9b.js.map": "/businesslogistic/static/js/main.8ad76c9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e09bb289.css",
+    "static/js/main.8ad76c9b.js"
+  ]
+}
