@@ -1,4 +1,4 @@
-import React, { forwardRef, useState,useRef } from "react";
+import React, { forwardRef} from "react";
 import style from './eigth.module.scss'
 import map from '../../img/map.jpg'
 import Location from '../../img/Location.png'
@@ -24,28 +24,19 @@ const Eigth= forwardRef((props,ref)=>{
         {id:2,name:t("eigth_name2"), text: t("eigth_text2"),img:Call},
         {id:3,name:t("eigth_name3"), text: t("eigth_text3"),img:Message}
     ]
-    const [name, setName] = useState("")
-    const [number, setNumber] = useState("")
-    const [email, setEmail] = useState("")
-    const [type, setType] = useState("")
-    const [validated, setValidated] = useState(false);
-    // const regx = {
-    //     name: /^[а-яА-Яa-zA-Z ]+$/,
-    //     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9]+$/
-    // }
-    
+    const regx = {
+        email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9]+$/
+    }
     const schema = Yup.object().shape({
         name: Yup.string()
-            // .matches(regx.name, "Используйте а-я или a-z")
-            .required("vvedite imya"),
+            .required(t("eigth_error1")),
         email: Yup.string()
-            // .matches(regx.email, "format example@gmail.com")
-            .required("vedite email"),
+            .matches(regx.email, t("eigth_error3"))
+            .required(t("eigth_error2")),
         number: Yup.number()
-            .required("vedite nomer"),
+            .required(t("eigth_error4")),
         type: Yup.string()
-            // .matches(regx.name,"Используйте а-я или a-z")
-            .required("napiwite text")
+            .required(t("eigth_error5"))
     })
     const sendEmail = (values) => {
         
@@ -68,13 +59,6 @@ const Eigth= forwardRef((props,ref)=>{
                             <p className={style.h}>{t("eigth_h3")}</p>
                             <p className={style.p}>{t("eigth_p1")}<br/> {t("eigth_p2")}</p>
                         </div>
-                        {/* <form  className={style.form} onSubmit={onSubmit}>
-                            <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)} className={style.input} required placeholder={t("eigth_input1")}  autoComplete="off"/>
-                            <input type="number" name="number" value={number} onChange={(e)=>setNumber(e.target.value)} className={style.input} required placeholder={t("eigth_input2")} autoComplete="off"/>
-                            <input type="email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)} className={style.input} required placeholder={t("eigth_input3")} autoComplete="off"/>
-                            <textarea type="text" name="type" value={type} onChange={(e)=>setType(e.target.value)} placeholder={t("eigth_input4")} className={style.textarea} autoComplete="off" required />
-                            <button type="submit">{t("eigth_btn")}</button>
-                        </form> */}
                         <Formik
                             initialValues={{
                                 name:"",
@@ -86,25 +70,31 @@ const Eigth= forwardRef((props,ref)=>{
                             onSubmit={(values,{setSubmitting,resetForm})=>{
                                 setTimeout(()=>{
                                     sendEmail(values)
+                                    Swal.fire({
+                                        position: "center",
+                                        icon: "success",
+                                        showConfirmButton: false,
+                                        timer: 1500
+                                    });
                                     setSubmitting(false)
                                     resetForm()
                                 },1000)
                             }}
                         >
                             <Form className={style.form} >
-                                <div>
+                                <div className={style.Input}>
                                     <Field name="name" id="name" className={style.input} placeholder={t("eigth_input1")}/>
-                                    <ErrorMessage name="from_name">{(error) =><span>{error}</span>}</ErrorMessage>
+                                    <ErrorMessage name="name">{(error) =><span>{error}</span>}</ErrorMessage>
                                 </div>
-                                <div>
+                                <div  className={style.Input}>
                                     <Field type="number" name="number" id="number" className={style.input} placeholder={t("eigth_input2")}/>
                                     <ErrorMessage name="number">{(error) =><span>{error}</span>}</ErrorMessage>
                                 </div>
-                                <div>
+                                <div  className={style.Input}>
                                     <Field  name="email" id="email" className={style.input} placeholder={t("eigth_input3")}/>
                                     <ErrorMessage name="email">{(error) =><span>{error}</span>}</ErrorMessage>
                                 </div>
-                                <div>
+                                <div  className={style.Input}>
                                     <Field name="type" id="type" className={style.textarea} placeholder={t("eigth_input4")}/>
                                     <ErrorMessage name="type">{(error) =><span>{error}</span>}</ErrorMessage>
                                 </div>
@@ -114,7 +104,7 @@ const Eigth= forwardRef((props,ref)=>{
                         
                     </div>
                     <div className={style.right}>
-                        <img src={map} className={style.map}/>
+                        <img src={map} className={style.map} alt="map"/>
                         <div>
                             <div className={style.info}>
                                 {
@@ -133,7 +123,7 @@ const Eigth= forwardRef((props,ref)=>{
                                 <p className={style.mediaP}>{t("eigth_p3")}</p>
                                 <div className={style.icons}>
                                     <a href="https://wa.me/996707505822?text=Здравствуйте!"><img src={whatsapp} alt="whatsapp"/></a>
-                                    <img src={instagram} alt="instagram"/>
+                                    <img src={instagram} alt="instagram" />
                                     <a href="tg://996707505822"><img src={telegram} alt="telegram"/></a>
                                 </div>
                             </div>

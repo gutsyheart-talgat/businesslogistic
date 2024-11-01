@@ -4,7 +4,7 @@
     .eigth{
         width: 100%;
         height: 1520px;
-        background: linear-gradient(  #F4F6F9 685px, #32333F 833px);
+        background: linear-gradient(  #F4F6F9 750px, #32333F 833px);
         .content{
             padding: 60px 0;
             .left{
@@ -26,25 +26,27 @@
                     flex-direction: column;
                     grid-gap: 24px;
                     margin-top: 32px;
-                    .input,.textarea{
-                        width: 100%;
-                        font-size: 20px;
-                        line-height: 23px;
-                    }
-                    .input{
-                        height: 49px;
-                        padding: 10px;
-                    }
-                    .input::placeholder,.textarea::placeholder{
-                        font-size: 20px;
-                        line-height: 23px;
-                    }
-                    .textarea{
-                        height: 121px !important;
-                        padding: 10px 10px;
-                    }
-                    .textarea::placeholder{
-                        padding: 61px 0 16px ;
+                    .Input{
+                        .input,.textarea{
+                            width: 100%;
+                            font-size: 20px;
+                            line-height: 23px;
+                        }
+                        .input{
+                            height: 49px;
+                            padding: 10px;
+                        }
+                        .input::placeholder,.textarea::placeholder,span{
+                            font-size: 20px;
+                            line-height: 23px;
+                        }
+                        .textarea{
+                            height: 121px !important;
+                            padding: 10px 10px;
+                        }
+                        .textarea::placeholder{
+                            padding: 61px 0 16px ;
+                        }
                     }
                     
                 }
@@ -102,7 +104,7 @@
     .eigth{
         width: 100%;
         height: 1401px;
-        background: linear-gradient( to bottom, #F4F6F9 839px, #32333F 562px);
+        background: linear-gradient( to bottom, #F4F6F9 900px, #32333F 562px);
         .content{
             height: 1400px;
             padding: 100px 0;
@@ -127,25 +129,27 @@
                     flex-direction: column;
                     grid-gap: 24px;
                     margin-top: 60px;
-                    .input,.textarea{
-                        width: 100%;
-                        font-size: 20px;
-                        line-height: 23px;
-                    }
-                    .input{
-                        height: 49px;
-                        padding: 10px;
-                    }
-                    .input::placeholder,.textarea::placeholder{
-                        font-size: 20px;
-                        line-height: 23px;
-                    }
-                    .textarea{
-                        height: 159px !important;
-                        padding: 10px 10px;
-                    }
-                    .textarea::placeholder{
-                        padding: 99px 0 16px ;
+                    .Input{
+                        .input,.textarea{
+                            width: 100%;
+                            font-size: 20px;
+                            line-height: 23px;
+                        }
+                        .input{
+                            height: 49px;
+                            padding: 10px;
+                        }
+                        .input::placeholder,.textarea::placeholder,span{
+                            font-size: 20px;
+                            line-height: 23px;
+                        }
+                        .textarea{
+                            height: 159px !important;
+                            padding: 10px 10px;
+                        }
+                        .textarea::placeholder{
+                            padding: 99px 0 16px ;
+                        }
                     }
                     
                 }
@@ -232,25 +236,27 @@
                     flex-direction: column;
                     grid-gap: 24px;
                     margin-top: 60px;
-                    .input,.textarea{
-                        width: 453px;
-                        font-size: 20px;
-                        line-height: 23px;
-                    }
-                    .input{
-                        height: 49px;
-                        padding: 10px;
-                    }
-                    .input::placeholder,.textarea::placeholder{
-                        font-size: 20px;
-                        line-height: 23px;
-                    }
-                    .textarea{
-                        height: 236px !important;
-                        padding: 10px 10px;
-                    }
-                    .textarea::placeholder{
-                        padding: 176px 0 16px ;
+                    .Input{
+                        .input,.textarea{
+                            width: 453px;
+                            font-size: 20px;
+                            line-height: 23px;
+                        }
+                        .input{
+                            height: 49px;
+                            padding: 10px;
+                        }
+                        .input::placeholder,.textarea::placeholder,span{
+                            font-size: 20px;
+                            line-height: 23px;
+                        }
+                        .textarea{
+                            height: 236px !important;
+                            padding: 10px 10px;
+                        }
+                        .textarea::placeholder{
+                            padding: 176px 0 16px ;
+                        }
                     }
                     
                 }
@@ -337,25 +343,28 @@
                     flex-direction: column;
                     grid-gap: 24px;
                     margin-top: 60px;
-                    .input,.textarea{
-                        width: 453px;
-                        font-size: 20px;
-                        line-height: 23px;
-                    }
-                    .input{
-                        height: 49px;
-                        padding: 10px;
-                    }
-                    .input::placeholder,.textarea::placeholder{
-                        font-size: 20px;
-                        line-height: 23px;
-                    }
-                    .textarea{
-                        height: 236px !important;
-                        padding: 10px 10px;
-                    }
-                    .textarea::placeholder{
-                        padding: 176px 0 16px ;
+                    .Input{
+                        .input,.textarea{
+                            width: 453px;
+                            font-size: 20px;
+                            line-height: 23px;
+                        }
+                        .input{
+                            height: 49px;
+                            padding: 10px;
+                        }
+                        .input::placeholder,.textarea::placeholder,span{
+                            font-size: 20px;
+                            line-height: 23px;
+                        }
+                        .textarea{
+                            height: 236px !important;
+                            padding: 10px 10px;
+                        }
+                        .textarea::placeholder{
+                            padding: 176px 0 16px ;
+                        }
+                    
                     }
                     
                 }
@@ -431,17 +440,26 @@
             }
 
             .form{
-                .input,.textarea{
-                    border: none;
-                    background: none;
-                    border-bottom: 1px solid rgba(50, 51, 63, 1);
-                    font-family: $fonts;
-                    font-weight: 400;
-                }
-                .input::placeholder,.textarea::placeholder{
-                    font-family: $fonts;
-                    font-weight: 400;
-                    color: rgba(50, 51, 63, 0.3);
+                .Input{
+                    display: flex;
+                    flex-direction: column;
+                    .input,.textarea{
+                        border: none;
+                        background: none;
+                        border-bottom: 1px solid rgba(50, 51, 63, 1);
+                        font-family: $fonts;
+                        font-weight: 400;
+                    }
+                    .input::placeholder,.textarea::placeholder{
+                        font-family: $fonts;
+                        font-weight: 400;
+                        color: rgba(50, 51, 63, 0.3);
+                    }
+                    span{
+                        font-family: $fonts;
+                        font-weight: 400;
+                        color: red;
+                    }
                 }
                 button{
                     width: 184px;

@@ -65,6 +65,10 @@
     "eigth_input1":"Ваше имя",
     "eigth_input2":"Ваш номер",
     "eigth_input3":"Ваша почта",
-    "eigth_input4":"Тип груза или комментарий"
-
+    "eigth_input4":"Тип груза или комментарий",
+    "eigth_error1":"Введите имя!",
+    "eigth_error2":"Введите Email!",
+    "eigth_error3":"Email должен быть в формате example@gmail.com",
+    "eigth_error4":"Введите номер!",
+    "eigth_error5":"Введите текст!"
 } 

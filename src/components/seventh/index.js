@@ -4,7 +4,8 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation} from 'react-i18next'
-
+import finmarine from '../../img/finmarine.png'
+import energystar from '../../img/energystar.jpg'
 const Seventh=forwardRef((props,ref)=>{
     const {t}=useTranslation()
 
@@ -44,35 +45,24 @@ const Seventh=forwardRef((props,ref)=>{
             <div className="container">
                 <Slider {...settings}>
                     <div className={style.card}>
-                        <div className={style.logo}></div>
+                        <img src={finmarine} alt="finmarine" className={style.logo}/>
                         <div className={style.feedback}>
                             <div className={style.company}>
-                                <p className={style.h}>{t("seventh_sliderH")}</p>
-                                <p className={style.p}>{t("seventh_sliderDate")}</p>
+                                <p className={style.h}>FINMARINE</p>
                             </div>
                             <p>{t("seventh_sliderP")}</p>
                         </div>
                     </div>
                     <div className={style.card}>
-                        <div className={style.logo}></div>
+                        <img src={energystar} alt="energystar" className={style.logo}/>
                         <div className={style.feedback}>
                             <div className={style.company}>
-                                <p className={style.h}>{t("seventh_sliderH")}</p>
-                                <p className={style.p}>{t("seventh_sliderDate")}</p>
+                                <p className={style.h}>EnergyStar</p>
                             </div>
                             <p>{t("seventh_sliderP")}</p>
                         </div>
                     </div>
-                    <div className={style.card}>
-                        <div className={style.logo}></div>
-                        <div className={style.feedback}>
-                            <div className={style.company}>
-                                <p className={style.h}>{t("seventh_sliderH")}</p>
-                                <p className={style.p}>{t("seventh_sliderDate")}</p>
-                            </div>
-                            <p>{t("seventh_sliderP")}</p>
-                        </div>
-                    </div>
+                    
                 </Slider>
             </div>
             

@@ -10,7 +10,7 @@ const Second = forwardRef ((props,ref)=>{
         <div className={style.second} ref={ref}>
             <div className='container'>
                 <div className={style.content}>
-                    <img src={second}/>
+                    <img src={second} alt="seaport"/>
                     <div className={style.text}>
                         <h3>{t("second_h3")}</h3>
                         <div>

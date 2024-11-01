@@ -26,7 +26,7 @@ const Third = forwardRef((props,ref)=>{
                         element.map((el)=>
                         <div key={el.id} className={style.element}>
                             <div className={style.elFoto}>
-                                <img src={el.img} ></img>
+                                <img src={el.img} alt="serives"></img>
                                 <h3 className={style.elName}>{el.name}</h3>
                             </div>
                             <p className={style.elText}>{el.text}</p>

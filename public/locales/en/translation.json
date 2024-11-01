@@ -65,5 +65,10 @@
     "eigth_input1":"Your name",
     "eigth_input2":"Your number",
     "eigth_input3":"Your mail",
-    "eigth_input4":"Shipment type or comment"
+    "eigth_input4":"Shipment type or comment",
+    "eigth_error1":"Enter a name!",
+    "eigth_error2":"Enter Email!",
+    "eigth_error3":"Email should be in the format example@gmail.com",
+    "eigth_error4":"Enter a number!",
+    "eigth_error5":"Enter text!"
 }

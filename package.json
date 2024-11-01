@@ -1,6 +1,7 @@
 {
   "name": "bl",
   "version": "0.1.0",
+  "homepage":"https://gutsyheart-talgat.github.io/businesslogistic",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
