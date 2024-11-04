@@ -123,7 +123,6 @@ const Eigth= forwardRef((props,ref)=>{
                                 <p className={style.mediaP}>{t("eigth_p3")}</p>
                                 <div className={style.icons}>
                                     <a href="https://wa.me/996707505822?text=Здравствуйте!"><img src={whatsapp} alt="whatsapp"/></a>
-                                    <img src={instagram} alt="instagram" />
                                     <a href="tg://996707505822"><img src={telegram} alt="telegram"/></a>
                                 </div>
                             </div>

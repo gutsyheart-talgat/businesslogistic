@@ -15,15 +15,31 @@ export default function Header ({first,two,three,five,six,seven,eigth}){
 
         window.addEventListener('scroll',function(){
             const scrollPos = window.scrollY
-            if(scrollPos>48){
-                head.classList.add('head-fixed')
+            const Width = window.innerWidth
+            
+            
+            if (Width < 450){
+                if(scrollPos>19){
+                    head.classList.add('head-fixed')
+                } else{
+                    head.classList.remove('head-fixed')
+                }
+                if(scrollPos>750){
+                    head.classList.add("head-back")
+                } else{
+                    head.classList.remove("head-back")
+                }
             } else{
-                head.classList.remove('head-fixed')
-            }
-            if(scrollPos>1086){
-                head.classList.add("head-back")
-            } else{
-                head.classList.remove("head-back")
+                if(scrollPos>48){
+                    head.classList.add('head-fixed')
+                } else{
+                    head.classList.remove('head-fixed')
+                }
+                if(scrollPos>1086){
+                    head.classList.add("head-back")
+                } else{
+                    head.classList.remove("head-back")
+                }
             }
         })
 

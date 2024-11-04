@@ -18,23 +18,22 @@ const First=forwardRef ((props,ref)=>{
                     </div>
                     <div className={style.footer}>
                         <div className={style.element}>
-                            <div><img src={plane}/></div>
+                            <div><img src={plane} alt="plane"/></div>
                             <p>{t("first_avia")}</p>
                         </div>
                         <div className={style.line}/>
                         <div  className={style.element}>
-                            <div><img src={train}/></div>
+                            <div><img src={train} alt="train"/></div>
                             <p>{t("first_jd")}</p>
                         </div>
                         <div className={style.line}/>
                         <div className={style.element}>
-                            <div><img src={truck}/></div>
+                            <div><img src={truck} alt="truck"/></div>
                             <p>{t("first_auto")}</p>
                         </div>
                     </div>
                 </div>
             </div>
-        
         </div>
     )
 })

@@ -12,6 +12,7 @@ const Sixth=forwardRef((props,ref)=>{
             <div className="container">
                 <p>{t("sixth_p")}</p>
                 <img src={localStorage.getItem('i18nextLng') === "en" ? worldEN : worldRU} alt="world"/>
+                
             </div>
         </div>
     )
