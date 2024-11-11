@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css'
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation} from 'react-i18next'
 import finmarine from '../../img/finmarine.png'
-import energystar from '../../img/energystar.jpg'
+import energystar from '../../img/energystar.png'
 const Seventh=forwardRef((props,ref)=>{
     const {t}=useTranslation()
 
