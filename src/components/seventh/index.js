@@ -48,18 +48,18 @@ const Seventh=forwardRef((props,ref)=>{
                         <img src={finmarine} alt="finmarine" className={style.logo}/>
                         <div className={style.feedback}>
                             <div className={style.company}>
-                                <p className={style.h}>FINMARINE</p>
+                              <p className={style.h}>FINMARINE</p>
                             </div>
-                            <p>{t("seventh_sliderP")}</p>
+                            <p>{t("seventh_sliderP1")}</p>
                         </div>
                     </div>
                     <div className={style.card}>
                         <img src={energystar} alt="energystar" className={style.logo}/>
                         <div className={style.feedback}>
                             <div className={style.company}>
-                                <p className={style.h}>EnergyStar</p>
+                              <p className={style.h}>EnergyStar</p>
                             </div>
-                            <p>{t("seventh_sliderP")}</p>
+                            <p>{t("seventh_sliderP2")}</p>
                         </div>
                     </div>
                     
