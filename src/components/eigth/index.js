@@ -40,7 +40,7 @@ const Eigth= forwardRef((props,ref)=>{
     })
     const sendEmail = (values) => {
         
-        emailjs.send("service_j8w1uzj","template_646y61j", values,"_z8Ae045iRYAIYWh_" )
+        emailjs.send("service_j4tx4r7","template_a1fiumi", values,"LigeNxAwQGEZEX43V" )
             .then((result) => {
                 console.log(result.text)
             }, (error) => {
