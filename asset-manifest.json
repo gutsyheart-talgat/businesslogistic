@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/businesslogistic/static/css/main.e09bb289.css",
-    "main.js": "/businesslogistic/static/js/main.8ad76c9b.js",
+    "main.css": "/businesslogistic/static/css/main.cddf8094.css",
+    "main.js": "/businesslogistic/static/js/main.62c1c776.js",
     "static/media/fourth.jpg": "/businesslogistic/static/media/fourth.e409c10ab66b6c6b5368.jpg",
     "static/media/worldEN.svg": "/businesslogistic/static/media/worldEN.a19545330a6749f771acb49743de7242.svg",
     "static/media/worldRU.svg": "/businesslogistic/static/media/worldRU.e056c14512cc14affefc10f022cda3d9.svg",
@@ -13,9 +13,9 @@
     "static/media/insurence.png": "/businesslogistic/static/media/insurence.1b8b410cfecba6dca76f.png",
     "static/media/customs.png": "/businesslogistic/static/media/customs.f1a722d2d18541de45e8.png",
     "static/media/consult.png": "/businesslogistic/static/media/consult.a08d9d7af7c15182cfa0.png",
-    "static/media/finmarine.png": "/businesslogistic/static/media/finmarine.51f7e5a7173f54bb87f9.png",
-    "static/media/energystar.jpg": "/businesslogistic/static/media/energystar.809eb8de00decf95b7bf.jpg",
     "static/media/BusinessLogistic.svg": "/businesslogistic/static/media/BusinessLogistic.ecc024192a5df0edbd76cd52c91956da.svg",
+    "static/media/finmarine.png": "/businesslogistic/static/media/finmarine.b2f06a57143416ee951b.png",
+    "static/media/energystar.png": "/businesslogistic/static/media/energystar.ff646ed80f77c88c31ba.png",
     "static/media/train.svg": "/businesslogistic/static/media/train.bf75b8113b31680c7d0e41e7f5635670.svg",
     "static/media/slick.svg": "/businesslogistic/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/businesslogistic/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -30,11 +30,11 @@
     "static/media/Lock.svg": "/businesslogistic/static/media/Lock.8008f47e1025fb47f7b20f52a7707c1b.svg",
     "static/media/plane.svg": "/businesslogistic/static/media/plane.174702043cc0eaa872ba86ebc073de79.svg",
     "static/media/getFetch.cjs": "/businesslogistic/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.e09bb289.css.map": "/businesslogistic/static/css/main.e09bb289.css.map",
-    "main.8ad76c9b.js.map": "/businesslogistic/static/js/main.8ad76c9b.js.map"
+    "main.cddf8094.css.map": "/businesslogistic/static/css/main.cddf8094.css.map",
+    "main.62c1c776.js.map": "/businesslogistic/static/js/main.62c1c776.js.map"
   },
   "entrypoints": [
-    "static/css/main.e09bb289.css",
-    "static/js/main.8ad76c9b.js"
+    "static/css/main.cddf8094.css",
+    "static/js/main.62c1c776.js"
   ]
 }
