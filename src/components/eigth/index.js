@@ -6,7 +6,6 @@ import Call from '../../img/Call.png'
 import Message from '../../img/Message.png'
 import whatsapp from '../../img/whatsapp.png'
 import telegram from '../../img/telegram.png'
-import instagram from '../../img/instagram.png'
 import { useTranslation} from 'react-i18next'
 import Swal from "sweetalert2";
 import {Form,Formik, Field, ErrorMessage} from 'formik'
@@ -83,7 +82,7 @@ const Eigth= forwardRef((props,ref)=>{
                         >
                             <Form className={style.form} >
                                 <div className={style.Input}>
-                                    <Field name="name" id="name" className={style.input} placeholder={t("eigth_input1")}/>
+                                    <Field name="name" id="name" type="text" className={style.input} placeholder={t("eigth_input1")}/>
                                     <ErrorMessage name="name">{(error) =><span>{error}</span>}</ErrorMessage>
                                 </div>
                                 <div  className={style.Input}>
@@ -91,11 +90,11 @@ const Eigth= forwardRef((props,ref)=>{
                                     <ErrorMessage name="number">{(error) =><span>{error}</span>}</ErrorMessage>
                                 </div>
                                 <div  className={style.Input}>
-                                    <Field  name="email" id="email" className={style.input} placeholder={t("eigth_input3")}/>
+                                    <Field  name="email" type="email" id="email" className={style.input} placeholder={t("eigth_input3")}/>
                                     <ErrorMessage name="email">{(error) =><span>{error}</span>}</ErrorMessage>
                                 </div>
                                 <div  className={style.Input}>
-                                    <Field name="type" id="type" className={style.textarea} placeholder={t("eigth_input4")}/>
+                                    <Field as="textarea" name="type" id="type" className={style.textarea} placeholder={t("eigth_input4")}/>
                                     <ErrorMessage name="type">{(error) =><span>{error}</span>}</ErrorMessage>
                                 </div>
                                 <button type="submit">{t("eigth_btn")}</button>
