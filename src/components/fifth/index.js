@@ -29,7 +29,7 @@ const Fifth = forwardRef((props,ref)=>{
                         elements.map(el=>
                             <div key={el.id} className={style.element}>
                                 <div className={style.top}>
-                                    <div className={style.foto}><img src={el.img}/></div>
+                                    <div className={style.foto}><img src={el.img} alt="advantages"/></div>
                                     <h3>{el.name}</h3>
                                 </div>
                                 <p>{el.text}</p>

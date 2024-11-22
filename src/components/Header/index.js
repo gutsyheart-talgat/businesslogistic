@@ -51,7 +51,7 @@ export default function Header ({first,two,three,five,six,seven,eigth}){
         <div className={style.headerBack} id="header">
             <div className="container">
                 <header className={style.header}>
-                    <p onClick={()=>scrollHandler(first)} className={style.logo}><img src={logo} /></p>
+                    <p onClick={()=>scrollHandler(first)} className={style.logo}><img src={logo} alt="logo"/></p>
                     <menu className={style.menu}>
                         <p className={style.reference} onClick={()=>scrollHandler(two)}>{t("header_onas")}</p>
                         <p className={style.reference} onClick={()=>scrollHandler(three)}>{t("header_service")}</p>
