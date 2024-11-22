@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-@media(max-width:450px){
+@media(max-width:790px){
     .headerBack{
         position: absolute;
         top: 20px;
@@ -43,7 +43,7 @@
         }
     }
 }
-@media(max-width:900px) and (min-width:450px){
+@media(max-width:1245px) and (min-width:790px){
     .headerBack{
         position: absolute;
         top: 49px;
@@ -83,7 +83,7 @@
         }
     }
 }
-@media(max-width:1280px) and (min-width:900px){
+@media(max-width:1280px) and (min-width:1245px){
     .headerBack{
         position: absolute;
         top: 49px;

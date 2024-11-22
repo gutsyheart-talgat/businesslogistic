@@ -1,7 +1,7 @@
 @import '../../App.scss';
 
 
-@media(max-width:450px){
+@media(max-width:790px){
     .second{
         width: 100%;
         height: 655px;
@@ -43,7 +43,7 @@
         
     }
 }
-@media(max-width:900px) and (min-width:450px){
+@media(max-width:1245px) and (min-width:790px){
     .second{
         width: 100%;
         height: 897px;
@@ -84,7 +84,7 @@
         
     }
 }
-@media(max-width:1280px) and (min-width:900px){
+@media(max-width:1280px) and (min-width:1245px){
     .second{
         width: 100%;
         height: 721px;

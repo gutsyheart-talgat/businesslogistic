@@ -121,7 +121,7 @@ const Eigth= forwardRef((props,ref)=>{
                             <div className={style.media}>
                                 <p className={style.mediaP}>{t("eigth_p3")}</p>
                                 <div className={style.icons}>
-                                    <a href="https://wa.me/996707505822?text=Здравствуйте!"><img src={whatsapp} alt="whatsapp"/></a>
+                                    <a href="https://wa.me/996772339857?text=Здравствуйте!"><img src={whatsapp} alt="whatsapp"/></a>
                                     <a href="https://t.me/+996707505822"><img src={telegram} alt="telegram"/></a>
                                 </div>
                             </div>

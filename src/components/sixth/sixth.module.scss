@@ -1,7 +1,7 @@
 @import "../../App.scss";
 
 
-@media(max-width:450px){
+@media(max-width:790px){
     .sixth{
         height: 705px;
         padding: 60px 0;
@@ -19,7 +19,7 @@
         }
     }
 }
-@media(max-width:900px) and (min-width:450px){
+@media(max-width:1245px) and (min-width:790px){
     .sixth{
         height: 1140px;
         padding: 100px 0;
@@ -38,7 +38,7 @@
         }
     }
 }
-@media(max-width:1280px) and (min-width:900px){
+@media(max-width:1280px) and (min-width:1245px){
     .sixth{
         height: 1140px;
         padding: 100px 0;

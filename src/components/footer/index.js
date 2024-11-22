@@ -10,7 +10,7 @@ export default function Footer(){
             <div className="container">
                 <div className={style.content}>
                     <p>Business<span>Logistic</span></p>
-                    <button><a href="https://wa.me/996707505822?text=Здравствуйте!">{t("first_btn")}</a></button>
+                    <button><a href="https://wa.me/996772339857?text=Здравствуйте!">{t("first_btn")}</a></button>
                 </div>
             </div>
         </div>
